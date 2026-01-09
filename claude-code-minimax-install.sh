@@ -74,6 +74,7 @@ cat > "$install_dir/bin/claude-minimax" << EOF
 
 export CLAUDE_CONFIG_DIR="$install_dir/config"
 export CLAUDE_STATE_DIR="$install_dir/state"
+export ANTHROPIC_AUTH_TOKEN="$api_key"
 
 mkdir -p "\$CLAUDE_STATE_DIR"
 

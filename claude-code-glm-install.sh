@@ -72,6 +72,7 @@ cat > "$install_dir/bin/claude-glm" << EOF
 # 设置独立的配置和状态目录（完全隔离）
 export CLAUDE_CONFIG_DIR="$install_dir/config"
 export CLAUDE_STATE_DIR="$install_dir/state"
+export ANTHROPIC_AUTH_TOKEN="$api_key"
 
 # 确保状态目录存在
 mkdir -p "\$CLAUDE_STATE_DIR"
